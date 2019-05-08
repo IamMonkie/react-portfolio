@@ -7,6 +7,7 @@ import MainNavbar from "./components/Navbar";
 import ContactForm from "./components/ContactForm";
 
 import AboutMe from "./pages/AboutMe";
+import Resume from "./pages/resume";
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
           </header>
           <body className="App-body">
             <AboutMe />
+            <Resume />
             <ContactForm />
             {/* <Router>
             <Switch>

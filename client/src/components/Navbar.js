@@ -4,7 +4,7 @@ import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 class MainNavbar extends Component {
   render() {
     return (
-      <Navbar bg="light" variant="light" expand="md">
+      <Navbar bg="light" variant="light" expand="md" fixed="top">
         <Navbar.Brand href="#home">TODD WILLIAMS</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
