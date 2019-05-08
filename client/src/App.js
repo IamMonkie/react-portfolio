@@ -1,18 +1,25 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Container } from "react-bootstrap";
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "./components/Navbar";
+import MainNavbar from "./components/Navbar";
+import ContactForm from "./components/ContactForm";
+
+import AboutMe from "./pages/AboutMe";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <Navbar />
-        </header>
-        <body className="App-body">
-          {/* <Router>
+      <Container>
+        <div className="App" id="home">
+          <header className="App-header">
+            <MainNavbar />
+          </header>
+          <body className="App-body">
+            <AboutMe />
+            <ContactForm />
+            {/* <Router>
             <Switch>
               <Route exact path="/" Component={Home} />
               <Route path="/about" Component={About} />
@@ -20,9 +27,9 @@ class App extends Component {
               <Route component={noMatch} />
             </Switch>
           </Router> */}
-          <h1>APP</h1>
-        </body>
-      </div>
+          </body>
+        </div>
+      </Container>
     );
   }
 }
