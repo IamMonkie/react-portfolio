@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Container } from "react-bootstrap";
+import { Link, animateScroll as scroll } from "react-scroll";
 // import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // import "bootstrap/dist/css/bootstrap.min.css";

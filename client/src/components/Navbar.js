@@ -1,18 +1,73 @@
 import React, { Component } from "react";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
-
+import { Link, animateScroll as scroll } from "react-scroll";
 class MainNavbar extends Component {
   render() {
     return (
       <Navbar bg="light" variant="light" expand="md" fixed="top">
-        <Navbar.Brand href="#home">TODD WILLIAMS</Navbar.Brand>
+        <Navbar.Brand>
+          <Link
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            TODD WILLIAMS
+          </Link>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#aboutMe">ABOUT ME</Nav.Link>
-            <Nav.Link href="#applications">APPLICATIONS</Nav.Link>
-            <Nav.Link href="#resume">RESUME</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
+            <Nav.Link>
+              <Link
+                activeClass="active"
+                to="aboutMe"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                ABOUT ME
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link
+                activeClass="active"
+                to="applications"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                APPLICATIONS
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link
+                activeClass="active"
+                to="resume"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                RESUME
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                CONTACT
+              </Link>
+            </Nav.Link>
 
             <NavDropdown title="LINKS" id="basic-nav-dropdown">
               <NavDropdown.Item
