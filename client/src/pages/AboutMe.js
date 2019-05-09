@@ -15,7 +15,7 @@ class AboutMe extends Component {
       <div id="aboutMe" style={aboutMeStyle}>
         <Row>
           <Col>
-            <h1>About Me</h1>
+            <h1>ABOUT ME</h1>
           </Col>
         </Row>
         <Row>

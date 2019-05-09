@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Container } from "react-bootstrap";
 import { Link, animateScroll as scroll } from "react-scroll";
 // import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { MDBAnimation } from "mdbreact";
 
 // import "bootstrap/dist/css/bootstrap.min.css";
 import MainNavbar from "./components/Navbar";
@@ -18,10 +19,19 @@ class App extends Component {
           <header className="App-header">
             <MainNavbar />
           </header>
+
           <body className="App-body">
-            <AboutMe />
-            <Resume />
-            <ContactForm />
+            <MDBAnimation type="fadeInUpBig" delay="1s">
+              <AboutMe />
+            </MDBAnimation>
+            <MDBAnimation type="fadeInUpBig" delay="1.25s">
+              <Resume />
+            </MDBAnimation>
+
+            <MDBAnimation type="fadeInUpBig" delay="1.5s">
+              <ContactForm />
+            </MDBAnimation>
+
             {/* <Router>
             <Switch>
               <Route exact path="/" Component={Home} />
