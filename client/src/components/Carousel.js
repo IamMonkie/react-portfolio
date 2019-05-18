@@ -11,7 +11,7 @@ import { Image, Row, Col, Container } from "react-bootstrap";
 import beerstrologyPreview from "./images/beerstrologyPreview.png";
 import trainPreview from "./images/trainPreview.png";
 import giphyPreview from "./images/giphyPreview.png";
-// import streamerPreview from "./images/";
+import streamerPreview from "./images/streamerPreview.png";
 
 // --------------------------------------------------------
 // styling
@@ -65,14 +65,16 @@ class AppCarousel extends Component {
             style={imageStyling}
           />
         </div>
-        {/* <div>
-          <img
-            src={streamerPreview}
-            className="streamerImg"
-            alt="streamerImg"
-            style={imageStyling}
-          />
-        </div> */}
+        {
+          <div>
+            <img
+              src={streamerPreview}
+              className="streamerImg"
+              alt="streamerImg"
+              style={imageStyling}
+            />
+          </div>
+        }
       </Carousel>
     );
   }
