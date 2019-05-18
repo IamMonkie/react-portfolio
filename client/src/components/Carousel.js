@@ -1,23 +1,78 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import { Carousel } from "react-responsive-carousel";
+import {
+  Carousel,
+  onChange,
+  onClickItem,
+  onClickThumb
+} from "react-responsive-carousel";
+import { Image, Row, Col, Container } from "react-bootstrap";
+
+import beerstrologyPreview from "./images/beerstrologyPreview.png";
+import trainPreview from "./images/trainPreview.png";
+import giphyPreview from "./images/giphyPreview.png";
+// import streamerPreview from "./images/";
+
+// --------------------------------------------------------
+// styling
+const imageStyling = {
+  // margin: "10px"
+};
+// --------------------------------------------------------
 
 class AppCarousel extends Component {
   render() {
     return (
-      <Carousel>
+      <Carousel
+        showArrows={true}
+        onChange={onChange}
+        onClickItem={onClickItem}
+        onClickThumb={onClickThumb}
+      >
         <div>
-          <img src="assets/1.jpeg" />
-          <p className="legend">Legend 1</p>
+          <img
+            src={beerstrologyPreview}
+            className="beerstrologyImg"
+            alt="beerstrologyImg"
+            style={imageStyling}
+            showThumbs={true}
+          />
         </div>
+
         <div>
-          <img src="assets/2.jpeg" />
-          <p className="legend">Legend 2</p>
+          <img
+            src={trainPreview}
+            className="trainImg"
+            alt="trainImg"
+            style={imageStyling}
+          />{" "}
         </div>
+
         <div>
-          <img src="assets/3.jpeg" />
-          <p className="legend">Legend 3</p>
+          <img
+            src={giphyPreview}
+            className="giphyImg"
+            alt="giphyImg"
+            style={imageStyling}
+          />
         </div>
+
+        <div>
+          <img
+            src={beerstrologyPreview}
+            className="beerstrologyImg"
+            alt="beerstrologyImg"
+            style={imageStyling}
+          />
+        </div>
+        {/* <div>
+          <img
+            src={streamerPreview}
+            className="streamerImg"
+            alt="streamerImg"
+            style={imageStyling}
+          />
+        </div> */}
       </Carousel>
     );
   }
