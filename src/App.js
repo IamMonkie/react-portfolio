@@ -35,15 +35,6 @@ class App extends Component {
             <MDBAnimation type="fadeInUpBig" delay="1.75s">
               <ContactForm />
             </MDBAnimation>
-
-            {/* <Router>
-            <Switch>
-              <Route exact path="/" Component={Home} />
-              <Route path="/about" Component={About} />
-              <Route path="/contact" Component={Contact} />
-              <Route component={noMatch} />
-            </Switch>
-          </Router> */}
           </body>
         </div>
       </Container>

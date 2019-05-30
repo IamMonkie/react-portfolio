@@ -15,14 +15,14 @@ class AboutMe extends Component {
       <div id="aboutMe" style={aboutMeStyle}>
         <Row>
           <Col>
-            <h1>ABOUT ME</h1>
+            <h2>ABOUT ME</h2>
           </Col>
         </Row>
         <Row>
           <Col>
             <ProfileImage />
 
-            <h5>
+            <h6>
               I am a creative, collaborative, hard working Web Developer. I
               create user-friendly websites that solve problems through
               innovative design. I am a recent graduate of the University of
@@ -36,7 +36,7 @@ class AboutMe extends Component {
               experience in art, attention to detail, creative and analytical
               mind, and coding skill-set to a company to grow as a valuable
               asset.
-            </h5>
+            </h6>
           </Col>
         </Row>
       </div>

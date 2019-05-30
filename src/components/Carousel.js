@@ -30,6 +30,11 @@ class AppCarousel extends Component {
         onChange={onChange}
         onClickItem={onClickItem}
         onClickThumb={onClickThumb}
+        infiniteLoop={true}
+        autoPlay={true}
+        interval={5000}
+        transitionTime={3000}
+        stopOnHover={true}
       >
         <div>
           <img

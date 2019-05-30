@@ -1,13 +1,21 @@
 import React, { Component } from "react";
 import { Row, Col } from "react-bootstrap";
+
+// --------------------------------------------------------
+// styling
+const resumeStyle = {
+  marginTop: "3vh"
+};
+// --------------------------------------------------------
+
 class Resume extends Component {
   render() {
     return (
-      <div id="resume">
-        <h1>Resume</h1>
-        <div className="resumeText">
+      <div id="resume" style={resumeStyle}>
+        <h2>Resume</h2>
+        <div className="resumeText" style={resumeStyle}>
           <p>
-            <h5>
+            <h6>
               <p>
                 <strong>Skills</strong>
               </p>
@@ -158,7 +166,7 @@ class Resume extends Component {
                   </li>
                 </p>
               </ul>
-            </h5>
+            </h6>
           </p>
         </div>
       </div>
