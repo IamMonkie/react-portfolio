@@ -1,0 +1,142 @@
+@font-face {
+  src: url(fonts/futura-lt-bt/FutuLt.ttf);
+  font-family: futura;
+}
+
+body {
+  font-family: futura;
+}
+
+/* Todd Williams */
+.navbar-brand {
+  font-size: 3em;
+  /* margin: 10px; */
+}
+
+.nav-item:active {
+  color: red;
+  font-size: 1em;
+}
+
+.nav-item:hover {
+  color: aqua;
+}
+
+#aboutMeContainer {
+  /* border: 0.5em solid black; */
+  border-radius: 0.25em;
+  font-size: 1.5em;
+  margin: 10px;
+}
+
+#aboutMePic {
+  margin: 10px;
+}
+
+hr {
+  margin: 10px;
+  border: 0.5px solid rgb(184, 184, 184);
+}
+
+h1 {
+  margin: 10px;
+}
+
+a {
+  align-content: center;
+  text-align: center;
+  color: violet;
+}
+
+a:hover {
+  color: crimson;
+}
+
+#sitesContainer {
+  /* background: gray; */
+  align-content: center;
+  text-align: center;
+  /* margin: 1em; */
+  padding: 0.5em;
+  margin-bottom: 10px;
+  /* border: 0.05em solid rgb(184, 184, 184);
+  border-radius: 0.25em; */
+  font-size: 2em;
+}
+
+/* .siteLink {
+  border: 0.05em solid black;
+  border-radius: 0.25em;
+} */
+
+#hangmanContainer {
+  /* background: orange; */
+  background-image: url("images/hangmanPreview.png");
+  height: 5em;
+  width: 100%;
+  align-content: center;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 10px;
+  border: 0.125em solid rgb(182, 182, 182);
+  border-radius: 0.25em;
+}
+
+#crystalContainer {
+  /* background: dodgerblue; */
+  background-image: url("images/crystalPreview.png");
+  height: 5em;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+  border: 0.125em solid rgb(182, 182, 182);
+  border-radius: 0.25em;
+}
+
+#giphyContainer {
+  /* background: purple; */
+  background-image: url("images/giphyPreview.png");
+  height: 5em;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+  border: 0.125em solid rgb(182, 182, 182);
+  border-radius: 0.25em;
+}
+
+#trainContainer {
+  /* background: greenyellow; */
+  background-image: url("images/trainPreview.png");
+  height: 5em;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+  border: 0.125em solid rgb(182, 182, 182);
+  border-radius: 0.25em;
+}
+
+#beerstrologyContainer {
+  /* background: yellow; */
+  background-image: url("images/beerstrologyPreview.png");
+  height: 5em;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+  border: 0.125em solid rgb(182, 182, 182);
+  border-radius: 0.25em;
+}
+#formContainer {
+  margin: 10px;
+}
+
+#linksContainer {
+  margin: 10px;
+}
+
+.btn {
+  border-radius: 25px;
+}
+
+#resumeButton {
+  margin: 10px;
+}
