@@ -6,7 +6,7 @@ import {
   onClickItem,
   onClickThumb
 } from "react-responsive-carousel";
-import { Image, Row, Col, Container } from "react-bootstrap";
+// import { Image, Row, Col, Container } from "react-bootstrap";
 
 import beerstrologyPreview from "./images/beerstrologyPreview.png";
 import trainPreview from "./images/trainPreview.png";
@@ -37,6 +37,7 @@ class AppCarousel extends Component {
         stopOnHover={true}
       >
         <div>
+          <a href="https://iammonkie.github.io/Beerstrology/"></a>
           <img
             src={beerstrologyPreview}
             className="beerstrologyImg"

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ProfileImage from "../components/profileImage";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 // --------------------------------------------------------
 // styling

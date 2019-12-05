@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { Form, Button, Row, Col } from "react-bootstrap";
+import { MDBInput } from "mdbreact";
+import Alert from "./alert";
+import Swal from "sweetalert2";
 
 // --------------------------------------------------------
 // styling
@@ -9,8 +12,8 @@ const contactStyle = {
 // --------------------------------------------------------
 
 class ContactForm extends Component {
-  constructor(...args) {
-    super(...args);
+  constructor(props) {
+    super(props);
 
     this.state = { validated: false };
   }
@@ -22,6 +25,38 @@ class ContactForm extends Component {
       event.stopPropagation();
     }
     this.setState({ validated: true });
+
+    if (form.checkValidity() === true) {
+      this.handleAlert();
+    }
+  }
+
+  handleAlert(form) {
+    let timerInterval;
+    Swal.fire({
+      title: "Auto close alert!",
+      html: "I will close in <b></b> milliseconds.",
+      timer: 2000,
+      timerProgressBar: true,
+      onBeforeOpen: () => {
+        Swal.showLoading();
+        timerInterval = setInterval(() => {
+          Swal.getContent().querySelector(
+            "b"
+          ).textContent = Swal.getTimerLeft();
+        }, 100);
+      },
+      onClose: () => {
+        clearInterval(timerInterval);
+      }
+    }).then(result => {
+      if (
+        /* Read more about handling dismissals below */
+        result.dismiss === Swal.DismissReason.timer
+      ) {
+        console.log("I was closed by the timer"); // eslint-disable-line
+      }
+    });
   }
 
   render() {
@@ -40,7 +75,7 @@ class ContactForm extends Component {
         <Form
           noValidate
           validated={validated}
-          onSubmit={e => this.handleSubmit(e)}
+          onClick={e => this.handleSubmit(e)}
         >
           <Form.Row>
             <Form.Group as={Col} md="4" controlId="validationCustom01">
@@ -104,7 +139,9 @@ class ContactForm extends Component {
             </Form.Group>
           </Form.Row>
 
-          <Button type="submit">Submit</Button>
+          <Button id="submitButton" type="button">
+            Submit
+          </Button>
         </Form>
       </div>
     );
