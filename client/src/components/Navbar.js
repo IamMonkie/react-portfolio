@@ -14,7 +14,7 @@ class MainNavbar extends Component {
             offset={-70}
             duration={500}
           >
-            TODD WILLIAMS
+            <h4>TODD WILLIAMS</h4>
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -29,7 +29,7 @@ class MainNavbar extends Component {
                 offset={-70}
                 duration={500}
               >
-                ABOUT ME
+                <strong>ABOUT ME</strong>
               </Link>
             </Nav.Link>
             <Nav.Link>
@@ -41,7 +41,7 @@ class MainNavbar extends Component {
                 offset={-70}
                 duration={500}
               >
-                APPLICATIONS
+                <strong>APPLICATIONS</strong>
               </Link>
             </Nav.Link>
             <Nav.Link>
@@ -53,7 +53,7 @@ class MainNavbar extends Component {
                 offset={-70}
                 duration={500}
               >
-                RESUME
+                <strong>RESUME</strong>
               </Link>
             </Nav.Link>
             <Nav.Link>
@@ -65,7 +65,7 @@ class MainNavbar extends Component {
                 offset={-70}
                 duration={500}
               >
-                CONTACT
+                <strong>CONTACT</strong>
               </Link>
             </Nav.Link>
 
@@ -74,21 +74,21 @@ class MainNavbar extends Component {
                 href="https://www.linkedin.com/in/todd-williams-20461121/"
                 target="_blank"
               >
-                Linkedin
+                <strong>Linkedin</strong>
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item
                 href="https://github.com/IamMonkie"
                 target="_blank"
               >
-                Github
+                <strong>Github</strong>
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item
                 href="https://toddwilliamscg.com"
                 target="_blank"
               >
-                VFX Portfolio
+                <strong>VFX Portfolio</strong>
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
