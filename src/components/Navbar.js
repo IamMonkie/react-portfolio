@@ -85,7 +85,7 @@ class MainNavbar extends Component {
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item
-                href="https://toddwilliamscg.com"
+                href="https://toddwilliamscg.squarespace.com"
                 target="_blank"
               >
                 <strong>VFX Portfolio</strong>
