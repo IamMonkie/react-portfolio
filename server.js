@@ -1,6 +1,6 @@
 const express = require("express");
 const path = require("path");
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 5000;
 const app = express();
 const mongoose = require("mongoose");
 
@@ -21,7 +21,7 @@ app.get("*", (req, res) => {
 
 //Database
 //if deployed, use the deployed database, otherwise use local database
-let db = process.env.MONGODB_URI || "mongodb://localhost/streamingApp";
+// let db = process.env.MONGODB_URI || "mongodb://localhost/streamingApp";
 
 //connect mongoose to database
 mongoose.connect(db, error => {
