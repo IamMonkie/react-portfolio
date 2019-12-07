@@ -61,3 +61,5 @@ typings/
 .next
 # Photoshop files
 .psd
+
+server.js
