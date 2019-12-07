@@ -6,7 +6,13 @@ import Swal from "sweetalert2";
 // --------------------------------------------------------
 // styling
 const contactStyle = {
-  marginTop: "3vh"
+  marginTop: "3rem",
+  marginBottom: "3rem"
+};
+
+const copyrightStyle = {
+  textAlign: "center",
+  color: "rgba(0,0,0,0.4)"
 };
 // --------------------------------------------------------
 
@@ -161,6 +167,9 @@ class ContactForm extends Component {
             Submit
           </Button>
         </Form>
+        <p style={copyrightStyle}>
+          Copyright© 2019, Todd Williams. All rights reserved.
+        </p>
       </div>
     );
   }

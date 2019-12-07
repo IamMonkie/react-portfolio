@@ -6,11 +6,15 @@ import styles from "react-responsive-carousel/lib/styles/carousel.min.css";
 
 // import "bootstrap/dist/css/bootstrap.min.css";
 import MainNavbar from "./components/Navbar";
-import ContactForm from "./components/ContactFormTemp";
+import ContactForm from "./components/ContactForm";
 
 import AboutMe from "./pages/AboutMe";
 import Applications from "./pages/applications";
 import Resume from "./pages/resume";
+
+const carouselStyling = {
+  borderRadius: "10%"
+};
 
 class App extends Component {
   render() {

@@ -17,15 +17,21 @@ import streamerPreview from "./images/streamerPreview.png";
 
 // --------------------------------------------------------
 // styling
+const carouselStyling = {
+  borderRadius: "10%"
+};
 const imageStyling = {
   // margin: "10px"
 };
+
+const linkStyle = {};
 // --------------------------------------------------------
 
 class AppCarousel extends Component {
   render() {
     return (
       <Carousel
+        style={carouselStyling}
         showArrows={true}
         onChange={onChange}
         onClickItem={onClickItem}
@@ -45,7 +51,7 @@ class AppCarousel extends Component {
             style={imageStyling}
           />
           <a href="https://streamer.netlify.com" target="_blank">
-            Go to Deployed Site
+            <h5>Go to Deployed Site</h5>
           </a>
         </div>
 
@@ -57,7 +63,7 @@ class AppCarousel extends Component {
             style={imageStyling}
           />
           <a href="https://bird-brain.netlify.com" target="_blank">
-            Go to Deployed Site
+            <h5>Go to Deployed Site</h5>
           </a>
         </div>
 
@@ -69,7 +75,7 @@ class AppCarousel extends Component {
             style={imageStyling}
           />
           <a href="https://energy-extractor.netlify.com/" target="_blank">
-            Go to Deployed Site
+            <h5>Go to Deployed Site</h5>
           </a>
         </div>
 
@@ -82,7 +88,7 @@ class AppCarousel extends Component {
             showThumbs={true}
           />
           <a href="https://iammonkie.github.io/Beerstrology/" target="_blank">
-            Go to Deployed Site
+            <h5>Go to Deployed Site</h5>
           </a>
         </div>
 
@@ -97,7 +103,7 @@ class AppCarousel extends Component {
             href="https://iammonkie.github.io/Train-Scheduler/"
             target="_blank"
           >
-            Go to Deployed Site
+            <h5>Go to Deployed Site</h5>
           </a>
         </div>
 
@@ -109,7 +115,7 @@ class AppCarousel extends Component {
             style={imageStyling}
           />
           <a href="https://iammonkie.github.io/Giphy-API" target="_blank">
-            Go to Deployed Site
+            <h5>Go to Deployed Site</h5>
           </a>
         </div>
       </Carousel>
