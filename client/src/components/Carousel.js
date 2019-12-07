@@ -35,43 +35,18 @@ class AppCarousel extends Component {
         interval={5000}
         transitionTime={3000}
         stopOnHover={true}
+        showIndicators={false}
       >
         <div>
-          <a href="https://iammonkie.github.io/Beerstrology/"></a>
           <img
-            src={beerstrologyPreview}
-            className="beerstrologyImg"
-            alt="beerstrologyImg"
-            style={imageStyling}
-            showThumbs={true}
-          />
-        </div>
-
-        <div>
-          <img
-            src={trainPreview}
-            className="trainImg"
-            alt="trainImg"
-            style={imageStyling}
-          />{" "}
-        </div>
-
-        <div>
-          <img
-            src={crystalPreview}
-            className="crystalImg"
-            alt="crystalImg"
+            src={streamerPreview}
+            className="streamerImg"
+            alt="streamerImg"
             style={imageStyling}
           />
-        </div>
-
-        <div>
-          <img
-            src={giphyPreview}
-            className="giphyImg"
-            alt="giphyImg"
-            style={imageStyling}
-          />
+          <a href="https://streamer.netlify.com" target="_blank">
+            Go to Deployed Site
+          </a>
         </div>
 
         <div>
@@ -81,17 +56,62 @@ class AppCarousel extends Component {
             alt="birdBrainImg"
             style={imageStyling}
           />
+          <a href="https://bird-brain.netlify.com" target="_blank">
+            Go to Deployed Site
+          </a>
         </div>
-        {
-          <div>
-            <img
-              src={streamerPreview}
-              className="streamerImg"
-              alt="streamerImg"
-              style={imageStyling}
-            />
-          </div>
-        }
+
+        <div>
+          <img
+            src={crystalPreview}
+            className="crystalImg"
+            alt="crystalImg"
+            style={imageStyling}
+          />
+          <a href="https://energy-extractor.netlify.com/" target="_blank">
+            Go to Deployed Site
+          </a>
+        </div>
+
+        <div>
+          <img
+            src={beerstrologyPreview}
+            className="beerstrologyImg"
+            alt="beerstrologyImg"
+            style={imageStyling}
+            showThumbs={true}
+          />
+          <a href="https://iammonkie.github.io/Beerstrology/" target="_blank">
+            Go to Deployed Site
+          </a>
+        </div>
+
+        <div>
+          <img
+            src={trainPreview}
+            className="trainImg"
+            alt="trainImg"
+            style={imageStyling}
+          />
+          <a
+            href="https://iammonkie.github.io/Train-Scheduler/"
+            target="_blank"
+          >
+            Go to Deployed Site
+          </a>
+        </div>
+
+        <div>
+          <img
+            src={giphyPreview}
+            className="giphyImg"
+            alt="giphyImg"
+            style={imageStyling}
+          />
+          <a href="https://iammonkie.github.io/Giphy-API" target="_blank">
+            Go to Deployed Site
+          </a>
+        </div>
       </Carousel>
     );
   }
