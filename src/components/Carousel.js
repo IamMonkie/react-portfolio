@@ -31,7 +31,6 @@ class AppCarousel extends Component {
   render() {
     return (
       <Carousel
-        style={carouselStyling}
         showArrows={true}
         onChange={onChange}
         onClickItem={onClickItem}

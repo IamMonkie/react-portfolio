@@ -23,16 +23,34 @@ class ContactForm extends Component {
     this.state = { validated: false };
   }
 
-  handleSubmit(event) {
+  handleSubmit(event, validated) {
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
     } else {
-      this.handleAlert();
       this.setState({ validated: true });
+      // this.handleAlert();
+      if (validated === true) {
+        this.handleAlert();
+      }
     }
   }
+
+  /*
+  handleSubmit(event) {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+    this.setState({ validated: true });
+
+    if (this.validated === true) {
+      this.handleAlert();
+    }
+  }
+  */
 
   handleAlert() {
     let timerInterval;
@@ -58,6 +76,7 @@ class ContactForm extends Component {
       }
     });
   }
+
   /*
   handleEmail() {
     const messageHtml =  renderEmail(
@@ -96,7 +115,7 @@ class ContactForm extends Component {
             </h6>
           </p>
         </div>
-        <Form noValidate validated={validated}>
+        <Form noValidate validated={validated} method="post" netlify>
           <Form.Row>
             <Form.Group as={Col} md="4" controlId="validationCustom01">
               <Form.Label>First name</Form.Label>
@@ -151,14 +170,29 @@ class ContactForm extends Component {
               <Form.Label>Message</Form.Label>
               <Form.Control
                 required
+                rows="4"
+                cols="50"
                 type="text"
                 placeholder=""
-                defaultValue=""
               />
               <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
             </Form.Group>
           </Form.Row>
-
+          {/* 
+          <Form.Row>
+            <Form.Group as={Col} md="4" controlId="validationCustom01">
+              <Form.Label>Message</Form.Label>
+              <textarea
+                required
+                rows="4"
+                cols="50"
+                type="text"
+                placeholder=""
+              ></textarea>
+              <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+            </Form.Group>
+          </Form.Row>
+ */}
           <Button
             id="submitButton"
             type="button"

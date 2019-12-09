@@ -1,21 +1,33 @@
 import React, { Component } from "react";
-import SweetAlert from "sweetalert2-react";
+import Swal from "sweetalert2";
 
 class Alert extends Component {
+  handleAlert() {
+    let timerInterval;
+    Swal.fire({
+      title: "Message Sent!",
+      html:
+        "Thank you for contacting me. I will get back to you as soon as possible.",
+      timer: 5000,
+      timerProgressBar: true,
+      icon: "success",
+      onBeforeOpen: () => {
+        Swal.showLoading();
+      },
+      onClose: () => {
+        clearInterval(timerInterval);
+      }
+    }).then(result => {
+      if (
+        /* Read more about handling dismissals below */
+        result.dismiss === Swal.DismissReason.timer
+      ) {
+        console.log("I was closed by the timer"); // eslint-disable-line
+      }
+    });
+  }
   render() {
-    return (
-      <div>
-        <submitButton onClick={() => this.setState({ show: true })}>
-          Alert
-        </submitButton>
-        <SweetAlert
-          show={this.state.show}
-          title="Demo"
-          text="SweetAlert in React"
-          onConfirm={() => this.setState({ show: false })}
-        />
-      </div>
-    );
+    return this.handleAlert();
   }
 }
 export default Alert;
