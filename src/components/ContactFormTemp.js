@@ -10,6 +10,11 @@ const contactStyle = {
   marginBottom: "3rem",
   textAlign: "center"
 };
+
+const copyrightStyle = {
+  textAlign: "center",
+  color: "rgba(0,0,0,0.4)"
+};
 // --------------------------------------------------------
 
 class ContactForm extends Component {
@@ -25,6 +30,9 @@ class ContactForm extends Component {
               <p>Email: todd@toddwilliamscg</p>
               <p>Phone: (985)320-5504</p>
             </h5>
+          </p>
+          <p style={copyrightStyle}>
+            Copyright© 2019, Todd Williams. All rights reserved.
           </p>
         </div>
       </div>
