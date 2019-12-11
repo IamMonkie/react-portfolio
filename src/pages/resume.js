@@ -17,7 +17,7 @@ class Resume extends Component {
           <p>
             <h6>
               <p>
-                <strong>Skills</strong>
+                <strong>Technical Skills</strong>
               </p>
               <p>
                 <strong>Coding Browser: </strong>
@@ -30,7 +30,7 @@ class Resume extends Component {
               <p>
                 <strong>Dev Tools: </strong>
               </p>
-              <p>Heroku, Git, Github</p>
+              <p>Heroku, Git, Github, Netlify</p>
               <p>
                 <strong>Database: </strong>
               </p>
@@ -52,7 +52,7 @@ class Resume extends Component {
               <p>
                 3D Modeling (hard surface or organic), UV Unwrapping, Texturing/
                 Shading, Lighting, Rigging, Animation, Mental Ray, Matchmoving,
-                Compositing ,Video Editing, Photoshop, Illustrator
+                Compositing ,Video Editing, Photoshop, Illustrator, Adobe XD
               </p>
               <p>
                 <strong>Drafting: </strong>
@@ -61,13 +61,194 @@ class Resume extends Component {
                 AutoCAD, AutoCAD Electrical, Microstation V8i, Solidworks,
                 Inventor, Pro-Engineer, hand drafting
               </p>
+              {/*  
               <p>
-                <strong>Experience: </strong>
+                <p>
+                  <h2>PROJECTS</h2>
+                </p>
+                <p>
+                  <strong>Streamer</strong>
+                </p>
+                <p>
+                  <a href="https://streamer.netlify.com" target="_blank">
+                    Go To Deployed Site
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href="https://github.com/IamMonkie/streamer"
+                    target="_blank"
+                  >
+                    View Project on Github
+                  </a>
+                </p>
+
+                <p>
+                  ● <strong>Scope: </strong>Streamer is a search aggregator
+                  which allows users to search multiple streaming services for
+                  movies and tv shows from a single location.
+                </p>
+
+                <p>
+                  ● <strong>Core Responsibilities:</strong> navbar component,
+                  database setup, and CSS styling
+                </p>
+
+                <p>
+                  ● <strong>Technologies:</strong> React, firebase, myCSS
+                  framework, Axios, NodeJS, MongoDB, Mongoose, Utelly API, OMDB
+                  API, Adobe Photoshop
+                </p>
+
+                <br></br>
+
+                <p>
+                  <p>
+                    <strong>Birdbrain</strong>
+                  </p>
+                  <p>
+                    <a href="https://bird-brain.netlify.com" target="_blank">
+                      Go to Deployed Site
+                    </a>
+                  </p>
+                  <p>
+                    <a
+                      href="https://github.com/IamMonkie/clicky-game"
+                      target="_blank"
+                    >
+                      View Project on Github
+                    </a>
+                  </p>
+
+                  <p>
+                    ● <strong>Scope: </strong> Birdbrain is a memory game where
+                    the objective is to select each bird only once.
+                  </p>
+
+                  <p>
+                    ● <strong>Core Responsibilities: </strong>Responsible for
+                    entire application
+                  </p>
+
+                  <p>
+                    ● <strong>Technologies: </strong>React, material ui,
+                    Autodesk Sketchbook Pro
+                  </p>
+                </p>
+
+                <br></br>
+                <p>
+                  <p>
+                    <strong>Beetstrology</strong>
+                  </p>
+                  <p>
+                    <a
+                      href="https://energy-extractor.netlify.com/"
+                      target="_blank"
+                    >
+                      <h5>Go to Deployed Site</h5>
+                    </a>
+                    <a
+                      href="https://github.com/IamMonkie/crystal-collector"
+                      target="_blank"
+                    >
+                      <h5>View Project on Github</h5>
+                    </a>
+                  </p>
+                  <p>
+                    ● <strong>Scope: </strong>A fun app combining giving you
+                    your daily horoscope, suggesting 3 IPA Beers based on the
+                    Horoscope, and 1 extra as a "Wildcard" option.
+                  </p>
+
+                  <p>
+                    ● <strong>Core Responsibilities: </strong>Front end HTML,
+                    CSS
+                  </p>
+
+                  <p>
+                    ● <strong>Technologies: </strong>HTML5, CSS3, Javascript,
+                    jQuery, Bootstrap, Firebase, Adobe Photoshop
+                  </p>
+                </p>
+              </p>
+
+              <br></br>
+              <p>
+                <p>
+                  <strong>Birdbrain</strong>
+                </p>
+                <p>
+                  <a href="https://bird-brain.netlify.com" target="_blank">
+                    Go to Deployed Site
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href="https://github.com/IamMonkie/clicky-game"
+                    target="_blank"
+                  >
+                    View Project on Github
+                  </a>
+                </p>
+
+                <p>
+                  ● <strong>Scope: </strong> Birdbrain is a memory game where
+                  the objective is to select each bird only once.
+                </p>
+
+                <p>
+                  ● <strong>Core Responsibilities: </strong>Responsible for
+                  entire application
+                </p>
+
+                <p>
+                  ● <strong>Technologies: </strong>React, material ui, Autodesk
+                  Sketchbook Pro
+                </p>
+              </p>
+
+              <p>
+                <p>
+                  <strong>Birdbrain</strong>
+                </p>
+                <p>
+                  <a href="https://bird-brain.netlify.com" target="_blank">
+                    Go to Deployed Site
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href="https://github.com/IamMonkie/clicky-game"
+                    target="_blank"
+                  >
+                    View Project on Github
+                  </a>
+                </p>
+
+                <p>
+                  ● <strong>Scope: </strong> Birdbrain is a memory game where
+                  the objective is to select each bird only once.
+                </p>
+
+                <p>
+                  ● <strong>Core Responsibilities: </strong>Responsible for
+                  entire application
+                </p>
+
+                <p>
+                  ● <strong>Technologies: </strong>React, material ui, Autodesk
+                  Sketchbook Pro
+                </p>
+              </p>
+              */}
+              <p>
+                <h2>Experience: </h2>
               </p>
               <ul>
                 <p>
                   <li>
-                    CAD Drafter/ Designer, Powersecure; Durham, NC.
+                    Electrical CAD Drafter/ Designer, Powersecure; Durham, NC.
                     --(2016-Present)
                   </li>
                 </p>
@@ -78,34 +259,54 @@ class Resume extends Component {
                 </p>
                 <p>
                   <li>
-                    3D Generalist, Microsoft; Santa Monica, CA. -- (2014)
-                    --Commercial: "Productivity Future Vision"; modeling,
-                    animation, lighting, rendering)
+                    Microsoft commercial "Productivity Future Vision".
+                    Visualizing how some emerging technologies may look 5-10
+                    years from now.
+                    <Row>Role: modeling, animation, lighting, rendering</Row>
                     <Row>
-                      {"Website: "}&#160;
+                      {"Video: "}&#160;
                       <a
                         href="
-                    http://www.microsoft.com/enterprise/productivityvision/"
+                        https://www.youtube.com/watch?v=w-tFdreZB94&feature=youtu.be"
                         target="_blank"
                       >
-                        http://www.microsoft.com/enterprise/productivityvision/
+                        Productivity Future Vision
                       </a>
                     </Row>
                   </li>
                 </p>
                 <p>
                   <li>
-                    3D Generalist, Media Over Matter Productions; Santa Monica,
-                    CA. (2012-2014) --Short Film: "Monty and the Runaway
-                    Furnace"; modeling, texturing, lighting, set dressing,
-                    rendering
+                    Short Film: "Monty and the Runaway Furnace";
                     <Row>
-                      {"IMBD: "}&#160;
+                      Role: modeling, texturing, lighting, set dressing,
+                      rendering
+                    </Row>
+                    <Row>
+                      {"Website: "}&#160;
                       <a
-                        href="http://www.imdb.com/title/tt5109178/"
+                        href="http://www.montyandthefurnace.com/"
                         target="_blank"
                       >
-                        http://www.imdb.com/title/tt5109178/
+                        http://www.montyandthefurnace.com/
+                      </a>
+                    </Row>
+                    <Row>
+                      {"IMDB: "}&#160;
+                      <a
+                        href="https://www.imdb.com/title/tt5109178/"
+                        target="_blank"
+                      >
+                        https://www.imdb.com/title/tt5109178/
+                      </a>
+                    </Row>
+                    <Row>
+                      {"Amazon: "}&#160;
+                      <a
+                        href="https://www.amazon.com/gp/product/B07RXMHQKH?pf_rd_p=183f5289-9dc0-416f-942e-e8f213ef368b&pf_rd_r=ERQ3YQ20Y0YVMDCW3P1X"
+                        target="_blank"
+                      >
+                        Amazon Video
                       </a>
                     </Row>
                   </li>
@@ -113,16 +314,19 @@ class Resume extends Component {
                 <p>
                   <li>
                     Advanced Support Agent, TurboSquid; New Orleans, LA. --
-                    (2010-2012) Assisting customers with any issues they may be
-                    having. I frequently helped people overcome problems they
-                    are having in Maya, 3ds Max, and C4D. Common issues may have
-                    included mesh, texture, animation, rendering problems, and
-                    file format conversions.
+                    (2010-2012)
+                    <Row>
+                      Assisting customers with any issues they may be having. I
+                      frequently helped people overcome problems they are having
+                      in Maya, 3ds Max, and C4D. Common issues may have included
+                      mesh, texture, animation, rendering problems, and file
+                      format conversions.
+                    </Row>
                   </li>
                 </p>
               </ul>
               <p>
-                <strong>Education: </strong>
+                <h2>Education: </h2>
               </p>
               <ul>
                 <p>

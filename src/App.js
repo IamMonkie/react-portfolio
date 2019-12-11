@@ -6,7 +6,7 @@ import styles from "react-responsive-carousel/lib/styles/carousel.min.css";
 
 // import "bootstrap/dist/css/bootstrap.min.css";
 import MainNavbar from "./components/Navbar";
-import ContactForm from "./components/ContactForm";
+import ContactForm from "./components/ContactFormTemp";
 
 import AboutMe from "./pages/AboutMe";
 import Applications from "./pages/applications";

@@ -164,7 +164,7 @@ class ContactForm extends Component {
               <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
             </Form.Group>
           </Form.Row>
-
+          {/* 
           <Form.Row>
             <Form.Group as={Col} md="4" controlId="validationCustom01">
               <Form.Label>Message</Form.Label>
@@ -174,11 +174,13 @@ class ContactForm extends Component {
                 cols="50"
                 type="text"
                 placeholder=""
+                defaultValue=""
               />
               <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
             </Form.Group>
           </Form.Row>
-          {/* 
+           */}
+
           <Form.Row>
             <Form.Group as={Col} md="4" controlId="validationCustom01">
               <Form.Label>Message</Form.Label>
@@ -192,7 +194,7 @@ class ContactForm extends Component {
               <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
             </Form.Group>
           </Form.Row>
- */}
+
           <Button
             id="submitButton"
             type="button"

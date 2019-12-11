@@ -25,6 +25,10 @@ const imageStyling = {
 };
 
 const linkStyle = {};
+
+const descriptionStyle = {
+  color: "white"
+};
 // --------------------------------------------------------
 
 class AppCarousel extends Component {
@@ -49,8 +53,34 @@ class AppCarousel extends Component {
             alt="streamerImg"
             style={imageStyling}
           />
+          {/* 
+          <div class="description" style={descriptionStyle}>
+            <p>
+              <h5>
+                <strong>Description</strong>
+              </h5>
+            </p>
+            <p>
+              <strong>Scope:</strong> Streamer is a search aggregator which
+              allows users to search multiple streaming services for movies and
+              tv shows from a single location.
+            </p>
+            <p>
+              <strong>Core Responsibilities:</strong> navbar component, database
+              setup, and CSS styling
+            </p>
+            <p>
+              <strong>Technologies:</strong> React, firebase, myCSS framework,
+              Axios, NodeJS, MongoDB, Mongoose, Utelly API, OMDB API, Adobe
+              Photoshop
+            </p>
+          </div>
+           */}
           <a href="https://streamer.netlify.com" target="_blank">
             <h5>Go to Deployed Site</h5>
+          </a>
+          <a href="https://github.com/IamMonkie/streamer" target="_blank">
+            <h5>View Project on Github</h5>
           </a>
         </div>
 
@@ -64,6 +94,9 @@ class AppCarousel extends Component {
           <a href="https://bird-brain.netlify.com" target="_blank">
             <h5>Go to Deployed Site</h5>
           </a>
+          <a href="https://github.com/IamMonkie/clicky-game" target="_blank">
+            <h5>View Project on Github</h5>
+          </a>
         </div>
 
         <div>
@@ -75,6 +108,12 @@ class AppCarousel extends Component {
           />
           <a href="https://energy-extractor.netlify.com/" target="_blank">
             <h5>Go to Deployed Site</h5>
+          </a>
+          <a
+            href="https://github.com/IamMonkie/crystal-collector"
+            target="_blank"
+          >
+            <h5>View Project on Github</h5>
           </a>
         </div>
 
@@ -88,6 +127,9 @@ class AppCarousel extends Component {
           />
           <a href="https://iammonkie.github.io/Beerstrology/" target="_blank">
             <h5>Go to Deployed Site</h5>
+          </a>
+          <a href="https://github.com/IamMonkie/Beerstrology" target="_blank">
+            <h5>View Project on Github</h5>
           </a>
         </div>
 
@@ -104,6 +146,12 @@ class AppCarousel extends Component {
           >
             <h5>Go to Deployed Site</h5>
           </a>
+          <a
+            href="https://github.com/IamMonkie/Train-Scheduler"
+            target="_blank"
+          >
+            <h5>View Project on Github</h5>
+          </a>
         </div>
 
         <div>
@@ -115,6 +163,9 @@ class AppCarousel extends Component {
           />
           <a href="https://iammonkie.github.io/Giphy-API" target="_blank">
             <h5>Go to Deployed Site</h5>
+          </a>
+          <a href="https://github.com/IamMonkie/Giphy-API" target="_blank">
+            <h5>View Project on Github</h5>
           </a>
         </div>
       </Carousel>
