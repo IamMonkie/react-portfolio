@@ -23,5 +23,6 @@ code {
 }
 
 .carousel .slide {
-  background: honeydew;
+  background: white;
+  color: black;
 }
