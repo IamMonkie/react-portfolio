@@ -12,17 +12,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-/* carousel */
-.slider-wrapper {
-  border-radius: 3%;
-}
-
-.carousel .carousel-status {
-  margin-right: 1rem;
-}
-
-.carousel .slide {
-  background: white;
-  color: black;
-}

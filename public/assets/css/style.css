@@ -45,7 +45,7 @@ h1 {
 a {
   align-content: center;
   text-align: center;
-  color: violet;
+  /* color: violet; */
 }
 
 a:hover {
@@ -134,9 +134,15 @@ a:hover {
 }
 
 .btn {
-  border-radius: 25px;
+  border-radius: 0.25rem;
 }
 
 #resumeButton {
   margin: 10px;
+}
+
+#loginButton {
+  align-content: center;
+  text-align: "center";
+  color: rgba(0, 0, 0, 0.1);
 }

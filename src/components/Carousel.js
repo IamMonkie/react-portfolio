@@ -27,7 +27,7 @@ const imageStyling = {
 const linkStyle = {};
 
 const descriptionStyle = {
-  color: "white"
+  // color: "white"
 };
 // --------------------------------------------------------
 
@@ -53,7 +53,7 @@ class AppCarousel extends Component {
             alt="streamerImg"
             style={imageStyling}
           />
-          {/* 
+
           <div class="description" style={descriptionStyle}>
             <p>
               <h5>
@@ -75,7 +75,7 @@ class AppCarousel extends Component {
               Photoshop
             </p>
           </div>
-           */}
+
           <a href="https://streamer.netlify.com" target="_blank">
             <h5>Go to Deployed Site</h5>
           </a>

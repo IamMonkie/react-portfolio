@@ -1,0 +1,16 @@
+.slider-wrapper {
+  border-radius: 3%;
+}
+
+.carousel .carousel-status {
+  margin-right: 1rem;
+}
+
+.carousel .slide .description {
+  /* background: white; */
+  color: black;
+}
+
+.carousel .slide {
+  background: purple;
+}

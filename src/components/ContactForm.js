@@ -14,6 +14,7 @@ const copyrightStyle = {
   textAlign: "center",
   color: "rgba(0,0,0,0.4)"
 };
+
 // --------------------------------------------------------
 
 class ContactForm extends Component {
@@ -206,6 +207,9 @@ class ContactForm extends Component {
         <p style={copyrightStyle}>
           Copyright© 2019, Todd Williams. All rights reserved.
         </p>
+        <Button variant="link" id="loginButton">
+          Sign In
+        </Button>
       </div>
     );
   }

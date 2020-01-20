@@ -1,16 +1,15 @@
 import React, { Component } from "react";
 import { Container } from "react-bootstrap";
 // import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { MDBAnimation } from "mdbreact";
 import styles from "react-responsive-carousel/lib/styles/carousel.min.css";
 
 // import "bootstrap/dist/css/bootstrap.min.css";
 import MainNavbar from "./components/Navbar";
 import ContactForm from "./components/ContactFormTemp";
-
 import AboutMe from "./pages/AboutMe";
 import Applications from "./pages/applications";
 import Resume from "./pages/resume";
+import { MDBAnimation } from "mdbreact";
 
 const carouselStyling = {
   borderRadius: "10%"
