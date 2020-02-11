@@ -1,21 +1,28 @@
-const express = requre("express");
-const mongoose = requrie("mongoose");
+require("dotenv").config();
+const express = require("express");
+const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-
+const PORT = process.env.PORT || 5000;
 const app = express();
 
-// body parser middleware
-app.use(bodyParser.json());
-
 // DB Config
-const db = require("./config/keys").mongoURI;
+//if deployed, use the deployed database, otherwise use local database
 
-// connect to Mongo
+const db = process.env.mongoURI || "mongodb://localhost/DATABASE_URL";
+
+// connect to mongo Database
 mongoose
-  .connect(db)
-  .then(() => console.log("MongoDB Connected..."))
+  .connect(db, { useNewUrlParser: true }, { useUnifiedTopology: true })
+  .then(() => console.log("Connected to Database..."))
   .catch(err => console.log(`ERROR: ${err}`));
 
-const port = process.env.PORT || 5000;
+// Server
+// Listen to port
+app.listen(PORT, () => console.log(`Server started on port: ${PORT}`));
 
-app.listen(port, () => console.log(`Server started on port: ${port}`));
+// define middleware
+app.use(express.json());
+app.use(bodyParser.json());
+
+//const userRouter = require("./routes/users.js");
+//app.use("./routes/users.js");
