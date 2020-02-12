@@ -27,7 +27,8 @@ const imageStyling = {
 const linkStyle = {};
 
 const descriptionStyle = {
-  // color: "white"
+  background: "white",
+  color: "black"
 };
 // --------------------------------------------------------
 
@@ -51,10 +52,9 @@ class AppCarousel extends Component {
             src={streamerPreview}
             className="streamerImg"
             alt="streamerImg"
-            style={imageStyling}
           />
 
-          <div class="description" style={descriptionStyle}>
+          <div class="description">
             <p>
               <h5>
                 <strong>Description</strong>

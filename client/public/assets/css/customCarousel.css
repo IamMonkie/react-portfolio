@@ -7,10 +7,25 @@
 }
 
 .carousel .slide .description {
-  /* background: white; */
+  background: white;
   color: black;
 }
 
+/* controls background of animated slide. being overwritten by default css */
 .carousel .slide {
-  background: purple;
+  background: white !important;
+}
+
+/* li.slide.selected {
+  background: white;
+} */
+
+.carousel.carousel-slider {
+  border-radius: 3%;
+  background: none;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.18);
+}
+
+.carousel .thumb {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.18);
 }
