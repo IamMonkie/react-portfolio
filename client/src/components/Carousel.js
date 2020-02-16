@@ -46,6 +46,7 @@ class AppCarousel extends Component {
         transitionTime={3000}
         stopOnHover={true}
         showIndicators={false}
+        swipeScrollTolerance={3}
       >
         <div>
           <img
@@ -53,6 +54,7 @@ class AppCarousel extends Component {
             className="streamerImg"
             alt="streamerImg"
           />
+          {/* -------------------------------------------------------------------------- */}
 
           <div class="description">
             <p>
@@ -75,7 +77,7 @@ class AppCarousel extends Component {
               Photoshop
             </p>
           </div>
-
+          {/* -------------------------------------------------------------------------- */}
           <a href="https://streamer.netlify.com" target="_blank">
             <h5>Go to Deployed Site</h5>
           </a>
@@ -91,6 +93,29 @@ class AppCarousel extends Component {
             alt="birdBrainImg"
             style={imageStyling}
           />
+
+          {/* -------------------------------------------------------------------------- */}
+
+          <div class="description">
+            <p>
+              <h5>
+                <strong>Description</strong>
+              </h5>
+            </p>
+            <p>
+              <strong>Scope:</strong>Birdbrain is a memory game where the
+              objective is to select each bird only once.
+            </p>
+            <p>
+              <strong>Core Responsibilities:</strong>
+            </p>
+            <p>
+              <strong>Technologies:</strong> React, material ui, Autodesk
+              Sketchbook
+            </p>
+          </div>
+          {/* -------------------------------------------------------------------------- */}
+
           <a href="https://bird-brain.netlify.com" target="_blank">
             <h5>Go to Deployed Site</h5>
           </a>
@@ -106,6 +131,26 @@ class AppCarousel extends Component {
             alt="crystalImg"
             style={imageStyling}
           />
+
+          {/* -------------------------------------------------------------------------- */}
+          <div class="description">
+            <p>
+              <h5>
+                <strong>Description</strong>
+              </h5>
+            </p>
+            <p>
+              <strong>Scope:</strong>
+            </p>
+            <p>
+              <strong>Core Responsibilities:</strong>
+            </p>
+            <p>
+              <strong>Technologies:</strong>
+            </p>
+          </div>
+          {/* -------------------------------------------------------------------------- */}
+
           <a href="https://energy-extractor.netlify.com/" target="_blank">
             <h5>Go to Deployed Site</h5>
           </a>
@@ -125,6 +170,25 @@ class AppCarousel extends Component {
             style={imageStyling}
             showThumbs={true}
           />
+          {/* -------------------------------------------------------------------------- */}
+          <div class="description">
+            <p>
+              <h5>
+                <strong>Description</strong>
+              </h5>
+            </p>
+            <p>
+              <strong>Scope:</strong>
+            </p>
+            <p>
+              <strong>Core Responsibilities:</strong>
+            </p>
+            <p>
+              <strong>Technologies:</strong>
+            </p>
+          </div>
+          {/* -------------------------------------------------------------------------- */}
+
           <a href="https://iammonkie.github.io/Beerstrology/" target="_blank">
             <h5>Go to Deployed Site</h5>
           </a>
@@ -140,6 +204,25 @@ class AppCarousel extends Component {
             alt="trainImg"
             style={imageStyling}
           />
+          {/* -------------------------------------------------------------------------- */}
+          <div class="description">
+            <p>
+              <h5>
+                <strong>Description</strong>
+              </h5>
+            </p>
+            <p>
+              <strong>Scope:</strong>
+            </p>
+            <p>
+              <strong>Core Responsibilities:</strong>
+            </p>
+            <p>
+              <strong>Technologies:</strong>
+            </p>
+          </div>
+          {/* -------------------------------------------------------------------------- */}
+
           <a
             href="https://iammonkie.github.io/Train-Scheduler/"
             target="_blank"
@@ -161,6 +244,25 @@ class AppCarousel extends Component {
             alt="giphyImg"
             style={imageStyling}
           />
+          {/* -------------------------------------------------------------------------- */}
+          <div class="description">
+            <p>
+              <h5>
+                <strong>Description</strong>
+              </h5>
+            </p>
+            <p>
+              <strong>Scope:</strong>
+            </p>
+            <p>
+              <strong>Core Responsibilities:</strong>
+            </p>
+            <p>
+              <strong>Technologies:</strong>
+            </p>
+          </div>
+          {/* -------------------------------------------------------------------------- */}
+
           <a href="https://iammonkie.github.io/Giphy-API" target="_blank">
             <h5>Go to Deployed Site</h5>
           </a>
