@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Form, Button, Row, Col } from "react-bootstrap";
 // import { MDBInput } from "mdbreact";
 import Swal from "sweetalert2";
-
+import Modal from "./Modal";
 // --------------------------------------------------------
 // styling
 const contactStyle = {
@@ -207,9 +207,13 @@ class ContactForm extends Component {
         <p style={copyrightStyle}>
           Copyright© 2019, Todd Williams. All rights reserved.
         </p>
-        <Button variant="link" id="loginButton">
-          Sign In
-        </Button>
+        <Modal
+          currentName={this.props.currentName}
+          modalClose={this.props.modalClose}
+          MDBBtn={this.props.user ? "Profile" : "Sign In"}
+        >
+          {/* {this.props.renderBtn()} */}
+        </Modal>
       </div>
     );
   }
