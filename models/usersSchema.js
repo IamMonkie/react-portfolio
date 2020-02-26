@@ -17,10 +17,12 @@ let userSchema = new Schema({
     required: true,
     unique: true
   },
-  services: [
+  photo: [
     {
-      type: String,
-      required: true
+      type: String /*update type to image */,
+      required: false,
+      data: Buffer,
+      contentType: String
     }
   ],
   admin: [
@@ -28,7 +30,12 @@ let userSchema = new Schema({
       type: String,
       required: true
     }
-  ]
+  ],
+  creationDate: {
+    type: Date,
+    required: true,
+    default: Date.now
+  }
 });
 
 const Users = mongoose.model("Users", userSchema);

@@ -1,12 +1,43 @@
 const express = require("express");
+const router = express.Router();
 const userController = require("../controllers/userController");
 
-module.exports = function(app) {
-  // express routes
-  //   create
-  app.post("/api/create", userController.create);
+// get all
+router.get("/", async (req, res) => {
+  try {
+    const users = await userController.find();
+    res.json(users);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+});
+/*// get one
+  app.get("/:id", userController.find);
+  // create one
+  app.post("/", userController.create);
+  // update one
+  app.patch("/:id", userController.update);
+  // delete one
+  app.delete("/:id", userController.delete);*/
 
-  app.get("/api/:id", userController.find);
+// get one
+router.get("/:id", (req, res) => {
+  res.send("user id: " + req.params.id);
+});
 
-  app.put("/api/:id", userController.update);
-};
+// create one
+router.post("/", (req, res) => {
+  res.send("Hello World. I am creating one");
+});
+
+// update one
+router.patch("/:id", (req, res) => {
+  res.send("Hello World. I am updating one");
+});
+
+// delete one
+router.get("/:id", (req, res) => {
+  res.send("Hello World. I am deleting one");
+});
+
+module.exports = router;
